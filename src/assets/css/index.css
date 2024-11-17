@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: white;
+    color: black;
+  }
+  
+  body.dark {
+    background-color: black;
+    color: white;
+  }
+
+#principal {
+  position: relative;
+  height: 100%; 
+  width: 100%;
+  background-image:url('../src/assets/img/cta-bg.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed; /* Deixa a imagem fixa enquanto rola a página */
+}
+#sub {
+  position: relative;
+  z-index: 1; /* Garante que o conteúdo fique abaixo do DarkThemeToggle */
+  color: white; /* Ajuste o texto conforme necessário */
+}
+
+  
